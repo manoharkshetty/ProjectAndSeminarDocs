@@ -1,0 +1,43 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Presentation</title>
+</head>
+<body>
+<div class="wrap">
+<div id="slides"></div>
+</div>
+<script type="text/javascript"src="jquery-1.10.2.js"></script>
+<script type="text/javascript">
+	var Slides={
+		
+			var totalSlides='',
+			container : $( "#slides" ),
+			init: function(totalSlides){
+				if(!totalSlides) throw new Error("send total no of slides");
+				Slides.totalSlides=totalSlides;
+				Slides.loadContent();
+
+			},
+			loadContent: function(){
+				Slides.container.hide();
+				 var frag = document.createDocumentFragment(),
+      					bit;
+				for (var i =1; i<totalSlides; i++) {
+					$('<div id="#slide-'+ i+'"></div>')
+					.load('slides/slide'+i+'.html')
+					.appendTo(Slides.container);
+
+					
+				};
+				
+				 Slides.container.show();
+			}
+		
+	};
+	Slides.init(6);
+</script>
+</body>
+</html>

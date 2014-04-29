@@ -1,0 +1,325 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+     <style>
+            body{
+                width:1024px;
+                height: 2000px;
+                font-size:30px;
+                background: rgb(215, 215, 215);
+                background: -webkit-radial-gradient(#FFFFFF, #68BEFB);
+                background:    -moz-radial-gradient(#FFFFFF, #68BEFB)
+        repeat scroll 0 0 ;
+                background:     -ms-radial-gradient(#FFFFFF, #68BEFB);
+                background:      -o-radial-gradient(#FFFFFF, #68BEFB);
+                background:         radial-gradient(#FFFFFF, #68BEFB);
+            }
+
+            #start{
+                text-align:center;
+                width:1024px;
+                font-size:30px;
+            }
+            #slide1{
+                text-align:center;
+                width:1024px;
+                font-size:30px;
+            }
+            #slide2{
+                text-align:center;
+                width:1024px;
+                font-size:30px;
+            }
+
+            .step{
+                text-align:center;
+                width:1024px;
+                font-size:30px;
+            }
+
+            #slide7{
+                width:400px;
+            }
+            #slide8{
+                width:400px;
+            }
+            #slide9{
+                width:400px;
+            }
+
+            .hint_text{
+                font-size:30px;
+                background-color:#EEE;
+                padding:15px;
+            }
+
+            .fallback-message {
+                font-family: sans-serif;
+                line-height: 1.3;
+
+                width: 780px;
+                padding: 10px 10px 0;
+                margin: 20px auto;
+
+                border: 1px solid #E4C652;
+                border-radius: 10px;
+                background: #EEDC94;
+            }
+
+            .fallback-message p {
+                margin-bottom: 10px;
+            }
+
+            .impress-supported .fallback-message {
+                display: none;
+            }
+
+            p,h4{
+                margin: 0;
+
+            }
+            
+            #agenda ul {
+                
+                width: 80%;
+                margin: 0 auto;
+                text-align: left;
+            }
+            ol li{
+                width: 60%;
+                margin: 0 auto;
+                text-align: left;
+            }
+            ul li {
+                margin: 5px;
+                list-style: disc;
+                text-align: left;
+            }
+
+          
+
+        </style>
+
+</head>
+
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+   
+    <div id="start" class="step">
+         
+                    <table>   
+            <tr><td>       
+                <img src="img/col_logo.png" width="140px" height="140px" style="margin:-30px 0px;" /></td>
+                <td >
+                <h2 style="margin-top:-20px">SJB Institute of Technology</h2></td>
+                <td> <img src="img/swamiji.png" width="140px" height="140px" style="margin:-30px 10px;" /></td></td></tr>
+            </table>
+
+              
+               <h4  style="margin: -30px 0 0 -50px;">Dept. of Computer Science & Engineering</h4>
+               <p style="margin:100px 60px 0 0;">A Technical Seminar On</p>
+                <h3 style="margin:10px 60px 0 0;" >What Wearable Augmented Reality Can Do?</h3><h3>AND</h3>
+                <h3>Joystick mapped Augmented Reality</h3>
+                 <table >
+                    <tr >
+                    <td>
+                     <div style="margin-top:20px">
+                        <h4 style="margin-left:60px">BY</h4>
+                        <p >Manohara. K </p>
+                            <p>(1JB10CS054)</p></div> 
+                    </td>
+                    <td>
+                        <div style="margin-top:20px;" >
+                        <H4  style="margin-left:380px;"> Under The Guidance Of</h4>
+                     <p  style="margin-left:400px"> Mrs. Chaitra.M</p>
+                         <p style="margin-left:400px">Asst. professor</p></div>
+                    </td>
+                    </tr>
+                    </table>
+    </div>
+
+  
+    <div  id="agenda"class="step"  data-x="1500">
+        <h2>AGENDA</h2>
+               <ul style="list-style:">
+               <li>Presentation-2 Review</li>
+                <li>Introduction</li>
+                <li>What Wearable Augmented Reality Can Do for You</li>
+                <li>Algorithm Outline</li>
+                <li>Text Patch Recognition</li>
+                <li>Applications</li>
+               <li> Joystick mapped Augmented Reality</li>
+                <li>Conclusions and Future Work</li>
+                <li>References</li>
+                </ul>
+            </ul>
+    </div>
+
+    <div  class="step" data-x="-1500">
+       <h2>Presentation-2 Review</h2>
+       <h4>Paper Based Augmented Reality</h4>
+       <ul>
+            <li>Linking the physical and digital worlds is a long
+                    standing goal of augmented reality.</li>
+             <li>The paper proposes a new method of interacting with
+                     documents termed Paper-Based Augmented Reality that
+                    links patches of text to electronic data</li>
+        </ul>
+        <h4>Haptic System for Eyes Free and Hands Free Pedestrian Navigation</h4>
+        <ul>
+        <li>We presented a vibro-tactile system called HaptiNav, which illustrates the concept of Haptic
+                            Augmented Reality.</li>
+                 </ul>
+        
+    </div>
+
+  
+    <div class="step" data-y="1500"  >
+    <h2>Introduction</h2>
+         <ul>
+            <li>Wearable AR employs a head-mounted display (HMD), a wearable computer,and a set of sensors to determine the position and orientation of the user’s head.</li>
+            <li> As users move their heads, the HMD updates their virtual world view accordingly.</li>
+            <li>The most compelling argument for wearable augmented reality is its walk-up and ready-to-use aspect.,</li>
+         
+    </div>
+
+     <div class="step" data-y="-1500" >
+     <h2>Wearable AR Devices</h2>
+        <img src="img/war-2.png" alt="design" style="width:45%;height:auto;" />
+        <img src="img/war-5.jpg" alt="design" style="width:50%;height:auto;margin-left:40px;" /> 
+        
+    </div>
+
+   
+
+
+     <div class="step" data-scale="3" data-y="-1500" data-x="-2800" >
+        <h2>AR Processes</h2>
+        <ol>
+        <li>Build a virtual world whose coordinate system is identical with the physical world’s</li>
+        <li>Determine the position and orientation of the user’s head.</li>
+        <li>Place the virtual graphics’ camera in that position and orientation</li>
+        <li>Render an image of the physical world on the user’s HMD.</li>
+        <li>Render the graphical overlay over the physical-world image.</li>
+        </ol>
+    </div>
+
+     <div  class="step" data-y="2500"  >
+      <h2>APPLICATIONS</h2>
+                <ul>
+                    <li>Researchers have investigated a wide range of applications—medical, military, security, entertainment, navigation, shopping, maintenance</li>
+                    <li>This technology also has a place in shopping malls. A range of possibilities are available, such as providing product information, highlighting shopping lists</li>
+                    <li>Entertainment is a good candidate for early adoption of wearable AR</li>
+                    <li>Wearable AR would be of great help to the medical profession</li>
+                    </ul>
+
+    </div>
+
+ <div  class="step"  data-y="-1400" data-x="2800">
+     <h2>Joystick mapped Augmented Reality</h2>
+
+     <ul>
+     <li>Operating a robotic arm from indirect visual information poses
+        many technical and human performance challenges for the
+        operator.</li>
+     <li>This paper
+        reports the positive effects of Augmented Reality visual cues on
+        operator performance during end-effector controlled tele-
+        operation using only camera views.</li>
+        <li>Our solution is to overlay a
+            color-coded coordinate system on the end-effector of the robot
+            using AR techniques</li>
+     
+    </div>
+
+
+   <div class="step" data-rotate="90" data-y="-2400" data-x="3600" >
+         
+        <img src="img/ar joystick.jpg" alt="design" style="width:45%;height:400px;" />
+        <img src="img/jmar.jpg" alt="design" style="width:50%;height:500px;margin-left:40px;" /> 
+    <h3>Fig. User controlling the NASA robot with two handcontrollers and remote video views.</h3>
+               
+    </div> 
+
+   
+
+    <div  class="step" data-rotate="180" data-y="-4400" data-x="3070" >
+        <h2>Conclusions</h2>
+        <ul>
+                <li>In this presentation we discussed in Section two is a useful foundation for
+                    exploring the significance of AR in the inherent mental
+                    transformations present during tele-operations.and the importance of the Wearable Devices</li>
+                <li> The preliminary
+                        subject testing performed shows that AR reduces reversal errors
+                        and distance traveled, thereby supporting some of our hypothesis. </li>
+                <li>So Scope of Augmented Reality is broadened as the applications it provides are high </li>
+                </ul>
+                
+
+    </div>
+
+  
+    
+     <div class="step" data-rotate="20"  data-y="-3800" data-x="4470" >
+              <h2>REFERENCES</h2>
+                <ol>
+                    <li>R. Azuma et al., “Recent Advances in Augmented Reality,” IEEE Computer Graphics and Applications,
+                     vol. 21, no. 6, 2001, pp. 34-47.</li>
+                    <li>B. Thomas et al., “ARQuake: An Out-
+                        door/Indoor Augmented Reality First
+                        Person Application,” Proc. 4th Int’l
+                        Symp. Wearable Computers (ISWC 00),
+                        IEEE CS Press, 2000, pp. 139-146.</li>
+                    <li> Chien C.H. “A Computer Vision System for Extravehicular
+                        Activity Helper and Retriever.” Intern. Journal on Applied
+                        Intelligence; 5:251-265, 1995</li>
+                    
+                </ol>
+    </div>
+   <div class="step"  data-scale="2"  data-y="-5000" data-x="5470">
+    <h2>THANK YOU</h2></div>
+
+ 
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
+
